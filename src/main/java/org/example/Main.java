@@ -6,10 +6,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         System.out.println("Entrer un string:");
         String str = scanner.next();
-        System.out.println("return string c'est: "+ truncate(str));
+        System.out.println("return string c'est: "+ truncate(str));*/
+
+        SortTesting sortTesting = new SortTesting();
+        sortTesting.generateRandomArray();
+        sortTesting.printArray();
+        System.out.println("-------Sorting-------");
+        sortTesting.bubbleSort();
     }
 
     public static String truncate(String str)
